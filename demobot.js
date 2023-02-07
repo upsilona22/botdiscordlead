@@ -19,7 +19,7 @@ const modRoleID = "775654181167562752";
 
 const fetch = require('isomorphic-fetch');
 const Dropbox = require('dropbox').Dropbox;
-let dbx = new Dropbox({accessToken: "sl.BYWiiG3lBhKbXDQbmGqkwJkH9_IlWigU0p1f40bCn4zd9I7TNe0SrDkqJDFyqnp9Prlb8iPMPtqEIB5yK-M4H_yCpcsPtYni4Ihxy0p2s-9sHttyprWqYUS0bStt_BSxwdGZQqSXei6H", fetch: fetch});
+let dbx = new Dropbox({accessToken: "sl.BYVmgU1XZ8ZtuZuu6KG_usr4dXRLcDiu2nj5f4gmyYP-JQ_BdEERKymrARDyQWnhDhH4Ro4_d8H6XAA4Zc3tiUTnmBteOAw5DXKYQiFqHatbTLNoubQ4n3vgR9JkX_DfQuls_E3VTmAB", fetch: fetch});
 let failedDownload = false;
 
 // On startup downloads files from Dropbox to keep continuity across sessions
