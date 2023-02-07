@@ -28,7 +28,7 @@ client.on("ready", () => {
 });
 
 // Logs into Discord
-client.login("MTA3MTM0NDkwNzQwNDQ2MDE0Ng.GYdCY_.xD6_l3ibHQA-4NfFWWSfXPJk5P3ko7LoiOwBLg").catch(function (err) {
+client.login(process.env.TOKEN).catch(function (err) {
     console.log(err);
 });
 
