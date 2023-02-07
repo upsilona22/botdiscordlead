@@ -28,7 +28,7 @@ client.on("ready", () => {
 });
 
 // Logs into Discord
-client.login(process.env.TOKEN).catch(function (err) {
+client.login(config.discordToken).catch(function (err) {
     console.log(err);
 });
 
