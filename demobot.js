@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const config = process.env
+const config = process.env;
 const { SlashCommandBuilder } = require('@discordjs/builders');
 //const config = require("./config.json"); // For local Testing only
 const client = new Discord.Client({
