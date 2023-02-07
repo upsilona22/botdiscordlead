@@ -19,7 +19,7 @@ const modRoleID = "775654181167562752";
 
 const fetch = require('isomorphic-fetch');
 const Dropbox = require('dropbox').Dropbox;
-let dbx = new Dropbox({accessToken: "sl.BYVmgU1XZ8ZtuZuu6KG_usr4dXRLcDiu2nj5f4gmyYP-JQ_BdEERKymrARDyQWnhDhH4Ro4_d8H6XAA4Zc3tiUTnmBteOAw5DXKYQiFqHatbTLNoubQ4n3vgR9JkX_DfQuls_E3VTmAB", fetch: fetch});
+let dbx = new Dropbox({accessToken: process.env.token, fetch: fetch});
 let failedDownload = false;
 
 // On startup downloads files from Dropbox to keep continuity across sessions
@@ -28,7 +28,7 @@ client.on("ready", () => {
 });
 
 // Logs into Discord
-client.login(config.discordToken).catch(function (err) {
+client.login(process.env.TOKEN).catch(function (err) {
     console.log(err);
 });
 
